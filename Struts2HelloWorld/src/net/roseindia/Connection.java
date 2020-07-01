@@ -13,7 +13,7 @@ public class Connection {
 		
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			Connection con=(Connection) DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "Aricad2");
+			Connection con=(Connection) DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "Code");
 			
 			Statement statement =((java.sql.Connection) con).createStatement();
 			String sql="Select * from Utilisateur";
